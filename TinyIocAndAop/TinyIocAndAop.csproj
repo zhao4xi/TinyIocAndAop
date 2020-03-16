@@ -42,6 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoreIOC\Cat.cs" />
+    <Compile Include="CoreIOC\CatExtensions.cs" />
+    <Compile Include="CoreIOC\InjectionAttribute.cs" />
+    <Compile Include="CoreIOC\Key.cs" />
+    <Compile Include="CoreIOC\Lifetime.cs" />
+    <Compile Include="CoreIOC\ServiceRegistry.cs" />
+    <Compile Include="CoreIOC\MapToAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TinyAop.cs" />

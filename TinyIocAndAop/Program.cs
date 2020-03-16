@@ -10,6 +10,13 @@ namespace TinyIocAndAop
     {
         static void Main(string[] args)
         {
+
+            var container = new Cat().Register<IServiceA, ServiceA>(Lifetime.Transient);
+            var tt = container.GetService<IServiceA>();
+            tt.Say("hello ");
+            Console.Read();
+
+
             TinyPropertyInjectIocTest.Test();
 
             TinyCtorInjectorIocTest.Test();
